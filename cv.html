@@ -1,1 +1,57 @@
-<h1>CV Page</h1><p><a href="CV_Oluwole.pdf" download>Download my CV</a></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dr. Oluwole Oyebamiji - CV</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+  <div class="nav-container">
+    <img src="profile.jpg" alt="Profile Photo" class="profile-photo" />
+    <nav aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="education.html">Education</a>
+      <a href="cv.html" class="active">CV</a>
+    </nav>
+    <button id="darkModeToggle" aria-pressed="false" aria-label="Toggle dark mode">Dark Mode</button>
+  </div>
+
+  <div style="text-align:center; margin-top: 1rem;">
+    <p>Email: <a href="mailto:o.k.oyebamiji@bham.ac.uk">o.k.oyebamiji@bham.ac.uk</a></p>
+    <div class="social-links" aria-label="Social links">
+      <a href="https://scholar.google.com/citations?user=pxsVFGgAAAAJ&hl=en" target="_blank" rel="noopener" title="Google Scholar"><i class="fab fa-google"></i></a>
+      <a href="https://orcid.org/0000-0002-1234-5678" target="_blank" rel="noopener" title="ORCID"><i class="fab fa-orcid"></i></a>
+      <a href="https://www.linkedin.com/in/oluwoleoyebamiji" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section>
+    <h2>Curriculum Vitae</h2>
+    <p><a href="CV_Oluwole.pdf" download class="download-cv-btn" aria-label="Download CV PDF">Download CV (PDF)</a></p>
+    <p>You can download my full academic CV by clicking the button above.</p>
+  </section>
+</main>
+
+<footer style="text-align:center; padding: 1rem; font-size: 0.9rem; color:#555;">
+  &copy; 2025 Dr. Oluwole Oyebamiji
+</footer>
+
+<script>
+  const darkModeToggle = document.getElementById('darkModeToggle');
+  darkModeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    const isDark = document.body.classList.contains('dark-mode');
+    darkModeToggle.textContent = isDark ? 'Light Mode' : 'Dark Mode';
+    darkModeToggle.setAttribute('aria-pressed', isDark);
+  });
+</script>
+
+</body>
+</html>
