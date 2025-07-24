@@ -6,5 +6,3 @@ Oluwole expertise lies in theoretical foundations and multidisciplinary applicat
 Current projects:
 Oluwole is currently investigating challenges related to quantifying uncertainty and dealing with model over-parameterization. Some of his current works include: 
 Developing a novel approach to environmental monitoring by integrating sparse convolutional neural networks and LSTM networks with fused satellite data. Applying Bayesian optimal weighting scheme for combining simulation ensemble for global climate projection. Performing uncertainty quantification for a large-scale climate impact and adaptation model using Bayesian probabilistic deep learning.
-
-<a href="CV.pdf" target="_blank">Download My CV (PDF)</a>
