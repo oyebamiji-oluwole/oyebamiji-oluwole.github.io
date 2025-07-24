@@ -1,1 +1,94 @@
-<h1>Education Page</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dr. Oluwole Oyebamiji - Education</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+  <div class="nav-container">
+    <img src="profile.jpg" alt="Profile Photo" class="profile-photo" />
+    <nav aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="education.html" class="active">Education</a>
+      <a href="cv.html">CV</a>
+    </nav>
+    <button id="darkModeToggle" aria-pressed="false" aria-label="Toggle dark mode">Dark Mode</button>
+  </div>
+
+  <div style="text-align:center; margin-top: 1rem;">
+    <p>Email: <a href="mailto:o.k.oyebamiji@bham.ac.uk">o.k.oyebamiji@bham.ac.uk</a></p>
+    <div class="social-links" aria-label="Social links">
+      <a href="https://scholar.google.com/citations?user=pxsVFGgAAAAJ&hl=en" target="_blank" rel="noopener" title="Google Scholar"><i class="fab fa-google"></i></a>
+      <a href="https://orcid.org/0000-0002-1234-5678" target="_blank" rel="noopener" title="ORCID"><i class="fab fa-orcid"></i></a>
+      <a href="https://www.linkedin.com/in/oluwoleoyebamiji" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section>
+    <h2>Education</h2>
+    <ul>
+      <li>Ph.D. Statistics, The Open University, Milton Keynes, UK, 2015.</li>
+      <li>MPhil. Statistics, University of Strathclyde, Glasgow, UK, 2010.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <ul>
+      <li>DeepMind Academic Fellow, School of Computer Science, University of Birmingham, 2023 – Present.</li>
+      <li>Senior Statistician, HR Wallingford Ltd, Wallingford, UK, 2021 - 2023.</li>
+      <li>Senior Research Associate, Department of Mathematics and Statistics, Lancaster University, 2018 – 2021.</li>
+      <li>Research Associate, School of Mathematics, Statistics and Physics, Newcastle University, 2015 - 2018.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Supervision completed/examined</h2>
+    <ul>
+      <li>Zaine-Ul-Abideen Qayyum: Developing a Neurodiverse Learning Platform (2025).</li>
+      <li>Nikhil Handa: Predictive Models of Hard Drive Failures for Real-World Applications (2024).</li>
+      <li>Ibrahim Hamid: Remote Sensing for Real-time Beehive Anomaly & Health Detection (2024).</li>
+      <li>Martin Muru: Quantella: A Neural Network Approach to Automated Trading Systems (2024).</li>
+      <li>Linlin Chen: Multiplayer Snake Game (2024).</li>
+      <li>Katlego Kobuane: Evaluating the effects of different sampling schemes on the predictive performance of surrogate models (2020). </li>
+      <li>Rebecca Tyson: Adaptive enrichment designs using frequentist techniques (2020).</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Current students</h2>
+    <ul>
+      <li>Deniz Erdogan: A Music Composer Aide.</li>
+      <li>Ashish Kumar Biswal</li>
+      <li>Jayakumar, Karan</li>
+      <li>Mohan Xiao</li>
+      <li>Walid Ahmed</li>
+      <li>Yunseo Lee</li>
+    </ul>
+  </section>
+</main>
+
+<footer style="text-align:center; padding: 1rem; font-size: 0.9rem; color:#555;">
+  &copy; 2025 Dr. Oluwole Oyebamiji
+</footer>
+
+<script>
+  const darkModeToggle = document.getElementById('darkModeToggle');
+  darkModeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    const isDark = document.body.classList.contains('dark-mode');
+    darkModeToggle.textContent = isDark ? 'Light Mode' : 'Dark Mode';
+    darkModeToggle.setAttribute('aria-pressed', isDark);
+  });
+</script>
+
+</body>
+</html>
