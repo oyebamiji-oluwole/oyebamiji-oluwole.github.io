@@ -1,1 +1,173 @@
 body { font-family: sans-serif; margin: 0; padding: 0; } .dark-mode { background: #111; color: white; } .nav-container { display: flex; justify-content: space-around; align-items: center; padding: 1em; background: #f4f4f4; } nav a { margin: 0 1em; } .profile-photo { width: 100px; border-radius: 50%; } footer { text-align: center; padding: 1em; background: #eee; }
+/* style.css (extract from previous style block) */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0; padding: 0;
+  background-color: #fff;
+  color: #222;
+  transition: background-color 0.3s, color 0.3s;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 1rem 1rem 0.5rem;
+  position: relative;
+}
+
+header .nav-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav a {
+  color: #cce6ff;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 12px;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover,
+header nav a.active {
+  color: #ffcc00;
+}
+
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid white;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(255,255,255,0.3);
+  transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+  transform: scale(1.05);
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1.5rem;
+}
+
+section h2 {
+  color: #003366;
+  font-size: 1.9rem;
+  margin-bottom: 0.8rem;
+  border-left: 6px solid #003366;
+  padding-left: 10px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+ul li {
+  margin-bottom: 0.6rem;
+}
+
+/* Download CV Button */
+.download-cv-btn {
+  display: inline-block;
+  background-color: #003366;
+  color: white;
+  font-weight: 700;
+  padding: 12px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  margin-top: 0.7rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.download-cv-btn:hover {
+  background-color: #ffcc00;
+  color: #003366;
+}
+
+/* Social links */
+.social-links {
+  font-size: 1.3rem;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: #cce6ff;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ffcc00;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #ddd;
+}
+
+body.dark-mode header {
+  background-color: #000a1a;
+  color: #ddd;
+}
+
+body.dark-mode header a,
+body.dark-mode .social-links a {
+  color: #ddd;
+}
+
+body.dark-mode .download-cv-btn {
+  background-color: #222;
+  color: #ffcc00;
+  box-shadow: none;
+}
+
+body.dark-mode .download-cv-btn:hover {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+body.dark-mode section h2 {
+  color: #ffcc00;
+  border-left-color: #ffcc00;
+}
+
+/* Dark mode toggle button */
+#darkModeToggle {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 25px;
+  color: white;
+  font-weight: 700;
+  padding: 5px 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  user-select: none;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+#darkModeToggle:hover {
+  background-color: white;
+  color: #003366;
+  border-color: white;
+}
