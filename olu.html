@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Academic Resume</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <style>
+    [contenteditable]:focus {
+      outline: 2px solid #2563eb;
+      background: #f0f9ff;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+  <div class="max-w-4xl mx-auto mt-10 p-6 bg-white shadow-xl rounded-xl" id="resume">
+
+    <!-- Header -->
+    <div class="flex flex-col md:flex-row items-center justify-between mb-6">
+      <div class="flex items-center space-x-4">
+        <img src="profile.jpg" alt="Profile" class="w-20 h-20 rounded-full border-2 border-gray-300"/>
+        <div>
+          <h1 class="text-3xl font-bold" contenteditable="true">Your Full Name</h1>
+          <p class="text-sm" contenteditable="true">Postgraduate Researcher | University Name</p>
+        </div>
+      </div>
+      <div class="text-sm mt-4 md:mt-0 space-x-4">
+        <a href="mailto:your@email.com" class="hover:underline">📧 Email</a>
+        <a href="https://scholar.google.com/" class="hover:underline" target="_blank">📚 Google Scholar</a>
+        <a href="https://linkedin.com/" class="hover:underline" target="_blank">💼 LinkedIn</a>
+      </div>
+    </div>
+
+    <!-- Summary -->
+    <div class="mb-6">
+      <h2 class="text-xl font-semibold border-b border-gray-300 pb-1 mb-2">Bio</h2>
+      <p contenteditable="true">
+        A short summary about your research interests, background, or career goals...
+      </p>
+    </div>
+
+    <!-- Education -->
+    <div class="mb-6">
+      <h2 class="text-xl font-semibold border-b border-gray-300 pb-1 mb-2">Education</h2>
+      <ul class="space-y-2">
+        <li contenteditable="true">
+          🎓 MSc in Machine Learning – University of XYZ, 2024
+        </li>
+        <li contenteditable="true">
+          🎓 BSc in Statistics – University of ABC, 2022
+        </li>
+      </ul>
+    </div>
+
+    <!-- Experience -->
+    <div class="mb-6">
+      <h2 class="text-xl font-semibold border-b border-gray-300 pb-1 mb-2">Experience</h2>
+      <ul class="space-y-2">
+        <li contenteditable="true">
+          🔬 Research Intern – AI Lab, Summer 2023<br/>
+          Worked on transformer models for satellite data.
+        </li>
+      </ul>
+    </div>
+
+    <!-- Skills -->
+    <div class="mb-6">
+      <h2 class="text-xl font-semibold border-b border-gray-300 pb-1 mb-2">Skills</h2>
+      <p contenteditable="true">
+        Python, PyTorch, Remote Sensing, Earth Observation, Machine Learning
+      </p>
+    </div>
+
+    <!-- Publications -->
+    <div class="mb-6">
+      <h2 class="text-xl font-semibold border-b border-gray-300 pb-1 mb-2">Publications</h2>
+      <ul class="space-y-2">
+        <li contenteditable="true">
+          📄 Oye, O. et al. (2024). "Vision Transformers for NDVI Forecasting", *EarthML Conference*.
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Buttons -->
+  <div class="flex justify-center space-x-4 my-6">
+    <button onclick="downloadPDF()" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">📥 Download as PDF</button>
+    <button onclick="toggleDark()" class="px-4 py-2 bg-gray-600 text-white rounded hover:bg-gray-700">🌓 Toggle Dark</button>
+  </div>
+
+  <script>
+    function downloadPDF() {
+      const element = document.getElementById('resume');
+      html2pdf().from(element).save('resume.pdf');
+    }
+
+    function toggleDark() {
+      document.body.classList.toggle('bg-gray-100');
+      document.body.classList.toggle('bg-gray-900');
+      document.body.classList.toggle('text-gray-900');
+      document.body.classList.toggle('text-white');
+    }
+  </script>
+</body>
+</html>
