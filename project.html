@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dr. Oluwole Oyebamiji - Education</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+  <div class="nav-container">
+    <img src="profile.jpg" alt="Profile Photo" class="profile-photo" />
+    <nav aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="education.html" class="active">Education</a>
+      <a href="supervision.html">Postgraduate supervision</a>
+      <a href="code.html">Code</a>
+      <a href="cv.html">CV</a>
+    </nav>
+    <button id="darkModeToggle" aria-pressed="false" aria-label="Toggle dark mode">Dark Mode</button>
+  </div>
+
+  <div style="text-align:center; margin-top: 1rem;">
+    <p>Email: <a href="mailto:o.k.oyebamiji@bham.ac.uk">o.k.oyebamiji@bham.ac.uk</a></p>
+    <div class="social-links" aria-label="Social links">
+          <p><a href="https://www.birmingham.ac.uk/staff/profiles/computer-science/academic-staff/oyebamiji-oluwole">University of Birmingham profile</a></p>
+    <p><a href="https://research.birmingham.ac.uk/en/persons/olu-oyebamiji">University of Birmingham research link</a></p>
+    <p><a href="https://scholar.google.com/citations?user=pxsVFGgAAAAJ&hl=en">Google Scholar</a></p>
+      <a href="https://scholar.google.com/citations?user=pxsVFGgAAAAJ&hl=en" target="_blank" rel="noopener" title="Google Scholar"><i class="fab fa-google"></i></a>
+      <!-- <a href="https://orcid.org/0000-0002-6561-9459" target="_blank" rel="noopener" title="ORCID"><i class="fab fa-orcid"></i></a>  -->
+      <!-- <a href="https://www.linkedin.com/in/oluwole-oyebamiji-4a1b2331b" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a>  -->
+      <a href="https://orcid.org/0000-0002-6561-9459" target="_blank">ORCID</a> |
+      <a href="https://www.linkedin.com/in/oluwole-oyebamiji-4a1b2331b" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section>
+    <h2>Current projects</h2>
+    <ul>
+      <li>He is currently investigating challenges related to quantifying uncertainty and dealing with model over-parameterization. Some of his current works include:</li>
+      <li>Advancing EDI by Addressing Intersectionality: A Framework to Support Racially Minoritised Researchers supported by ASPIRE Awards, University of Birmingham (2025).</li>
+      <li>Developing a novel approach to environmental monitoring by integrating sparse convolutional neural networks and LSTM networks with fused satellite data.</li>
+      <li>Computer vision framework for satellite-based vegetation change detection analysis</li>
+      <li>Performing uncertainty quantification for a large-scale climate impact and adaptation model using Bayesian probabilistic deep learning.</li>
+      <li>Emulation of global ozone observation using Deep Kernel Learning</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Some past projects</h2>
+    <ul>
+      <li>EA WRMP24 Decision-Making Process (2022-2023):A project to undertake assessments and provide support to the Environment Agency (EA) on Water Resources Management Plans (WRMP).</li>
+      <li>FWY0596 (2022): Enhancements to Dam Monitoring from Satellites for Bristol Water (DAMSAT) Capability to Support Roll-out: Cloud masking. This project compared the performance of selected cloud masking algorithms for Sentinel-2 image data.</li>
+      <li>D-MOSS (2021-2022): Dengue forecasting MOdel Satellite-based System in Vietnam. A dengue fever early warning forecasting system sponsored by the UK Space Agency. It combines the latest Earth Observation data from satellites with weather forecasts and other data to forecast dengue fever.</li>
+      <li>DAMSAT (2021-2022): Dam Monitoring from Satellites for Bristol Water: A system that uses satellite technology to remotely monitor water and tailings dams and other tailings storage facilities. The system helps to reduce the risk of failure of these structures and the consequent risk to the downstream population and ecosystems.</li>
+      <li>DSNE (2018-2021): Data Science for the Natural Environment. A joint project between Lancaster University and the Centre for Ecology & Hydrology (CEH), EPSRC-Funded. The aim is to co-create and deploy a data science of the natural environment driven by the grand challenges of environmental science.</li>
+      <li>NUFEB (2015-2018): Newcastle University Frontiers in Engineering Biology - A new frontier in design: the simulation of open engineered biological systems. This is an EPSRC-funded Frontier Engineering award.</li>
+      <li>ERMITAGE (2010-2013): Enhancing Robustness and Model Integration for the Assessment of Global Environmental Change (ERMITAGE), an FP7 EU-funded project which Involves the development of multidisciplinary modelling tools to address interactions of natural and socio- economic systems such as climate change, land use, energy market trends and economic development models for the assessment of global climate changes.</li>
+    </ul>
+  </section>
+</main>
+
+<footer style="text-align:center; padding: 1rem; font-size: 0.9rem; color:#555;">
+  &copy; 2025 Dr. Oluwole Oyebamiji
+</footer>
+
+<script>
+  const darkModeToggle = document.getElementById('darkModeToggle');
+  darkModeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    const isDark = document.body.classList.contains('dark-mode');
+    darkModeToggle.textContent = isDark ? 'Light Mode' : 'Dark Mode';
+    darkModeToggle.setAttribute('aria-pressed', isDark);
+  });
+</script>
+
+</body>
+</html>
