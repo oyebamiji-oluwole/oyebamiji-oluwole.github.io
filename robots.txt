@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://oyebamiji-oluwole.github.io/sitemap.xml
